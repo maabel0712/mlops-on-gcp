@@ -37,6 +37,7 @@ steps:
   - |
     dsl-compile --py $_PIPELINE_DSL --output $_PIPELINE_PACKAGE
   env:
+  - 'TAG_NAME=latest'
   - 'BASE_IMAGE=gcr.io/$PROJECT_ID/$_BASE_IMAGE_NAME:$TAG_NAME'
   - 'TRAINER_IMAGE=gcr.io/$PROJECT_ID/$_TRAINER_IMAGE_NAME:$TAG_NAME'
   - 'RUNTIME_VERSION=$_RUNTIME_VERSION'
