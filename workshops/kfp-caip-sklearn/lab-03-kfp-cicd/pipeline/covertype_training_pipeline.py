@@ -58,7 +58,7 @@ HYPERTUNE_SETTINGS = """
             {
                 "parameterName": "alpha",
                 "type": "DOUBLE",
-                "minValue": 0.0001,
+                "minValue": 0.00001,
                 "maxValue": 0.001,
                 "scaleType": "UNIT_LINEAR_SCALE"
             }
